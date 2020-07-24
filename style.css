@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+  margin:0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:17px;
+  color:white;
+  line-height:1.6;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+ 
+
+}
+h3{
+    color: #f8f8f6;
+    text-align: left;
+    font-size: 18pt;
+    
+
+}
+
+nav {
+    background: #0993fc;
+    height: 100px;
+    widows: 100px;
+    color: blanchedalmond;
+
+}
+label.logo{
+   
+    font-size: 35px;
+    line-height: 100px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    color: blanchedalmond;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin:0 5px
+}
+nav ul li a{
+    
+    padding: 7px 13px;
+    border-radius:3px ;
+    font-size: 14px;
+    text-transform:uppercase ;
+}
+
+a.active,a:hover{
+    background:#1b9bff;
+    transition: .5s;
+    
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+}
+#check{
+    display: none;
+}
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size:16px;
+    } 
+}
+    @media (max-width:858px){
+        .checkbtn{
+            display:block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height:100vh;
+            background: #2c3e50;
+            top:80px;
+            left:-100%;
+            text-align: center;
+            transition: all .5s;
+
+        }
+        nav ul li{
+          display:block;  
+          margin: 50px 0;
+          line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        a.hover,a.active{
+            background: none;
+            color:#fafcfd ;
+        }
+        #check:checked ~ ul{
+            left:0;
+        }
+        footer{
+            width: 100%;
+            background-color: #0993fc;
+            padding: 60px 0px;
+        }
+        
+        
+          
+    }
+
+
+
+
+
+
+    
+
+
